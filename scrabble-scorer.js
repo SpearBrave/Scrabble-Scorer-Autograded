@@ -1,7 +1,7 @@
 // This assignment is inspired by a problem on Exercism (https://exercism.org/tracks/javascript/exercises/etl) that demonstrates Extract-Transform-Load using Scrabble's scoring system. 
 
 const input = require("readline-sync");
-
+let word = input.question("Enter a word to score: ");
 const oldPointStructure = {
   1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
   2: ['D', 'G'],
@@ -11,7 +11,9 @@ const oldPointStructure = {
   8: ['J', 'X'],
   10: ['Q', 'Z']
 };
+const simplePointStructure = {
 
+}
 function oldScrabbleScorer(word) {
 	word = word.toUpperCase();
 	let letterPoints = "";
@@ -29,14 +31,25 @@ function oldScrabbleScorer(word) {
 	return letterPoints;
  }
 
+ 
+console.log(oldScrabbleScorer(word));
 // your job is to finish writing these functions and variables that we've named //
 // don't change the names or your program won't work as expected. //
-
+ 
 function initialPrompt() {
    console.log("Let's play some scrabble! Enter a word:");
 };
 
-let simpleScorer;
+function simpleScorer(word){
+   word = word.toUpperCase();
+   let letterPoints="";
+   
+   for (let i= 0;i < word.length; i++){
+   
+      letterPoints += letterPoints 
+      }
+      return(letterPoints);
+   }
 
 let vowelBonusScorer;
 
