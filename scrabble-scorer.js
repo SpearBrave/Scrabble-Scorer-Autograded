@@ -131,13 +131,6 @@ function transform(obj) {
    return lowerCasePoints;
 }
 
-
-
-
-
-
-
-
 function runProgram() {
    scorerPrompt();
    
@@ -157,3 +150,4 @@ module.exports = {
 	runProgram: runProgram,
 	scorerPrompt: scorerPrompt
 };
+    
